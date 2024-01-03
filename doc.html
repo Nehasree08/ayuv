@@ -1,0 +1,210 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor View</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>/* Reset some default styles */
+    body, h1, h2, p, ul, li, nav, a {
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Apply a background color to the body */
+    body {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    
+    /* Style the header and navigation */
+    header {
+        background-color: #3498db;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-right: 20px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    /* Style the profile button */
+    .profile-button {
+        background-color: #00a74a;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-align: center;
+    }
+    
+    .profile-button a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    /* Style the awareness block */
+    #awareness-block {
+        background-color: #fff;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    #awareness-block h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    </style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Disease Registry</a></li>
+                <li><a href="#">Drug Registry</a></li>
+                <li><a href="#">Insurer Registry</a></li>
+                <li><a href="#">Pharma Registry</a></li>
+            </ul>
+        </nav>
+        <div class="profile-button">
+            <a href="docprofile.html">Profile</a>
+        </div>
+    </header>
+    
+    <section id="awareness-block">
+        <h3>Health Awareness</h3>
+        <p>“Health is not valued until sickness comes.”</p>
+    </section>
+<head><style>
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1300px;
+      position: relative;
+      margin: auto;
+    }
+    
+    
+    
+    .active {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 2.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    </style>
+    </head>
+    <body>
+    
+    
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      
+      <img src="mela.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <img src="mela.jpg" style="width:100%">
+     
+    </div>
+    
+    <div class="mySlides fade">
+    
+      <img src="img_mountains_wide.jpg" style="width:100%">
+    
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000);
+    }
+    </script>
+    <style>
+    h1 {
+      text-align: center;
+      color: #DA664E;
+    }
+    
+    p {
+      text-indent: 50px;
+      letter-spacing: 1px;
+    }
+    .text{
+         
+    }
+    </style>
+    <!-- Your content goes here -->
+
+
+</body>
+<footer>
+    <p>&copy; Medical Registry</p>
+</footer>
+</html>
