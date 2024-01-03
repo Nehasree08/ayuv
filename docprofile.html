@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>/* Reset some default styles */
+    body, h1, h2, p, ul, li, nav, a {
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Apply a background color to the body */
+    body {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    
+    /* Style the header and navigation */
+    header {
+        background-color: #3498db;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+    }
+    
+    nav ul li {
+        margin-right: 20px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    /* Style the profile section */
+    #profile-details {
+        background-color: #fff;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #profile-photo img {
+        width: 10px; /* Adjust the size as needed */
+        height: 10px; /* Adjust the size as needed */
+        border-radius: 100%; /* Create a circular shape for the photo */
+        margin-bottom: 20px;
+    }
+    
+    #profile-info h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    #profile-info ul {
+        list-style-type: none;
+    }
+    
+    #profile-info ul li {
+        margin-bottom: 10px;
+    }
+    </style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Disease Registry</a></li>
+                <li><a href="#">Drug Registry</a></li>
+                <li><a href="#">Insurer Registry</a></li>
+            </ul>
+        </nav>
+        <div class="profile-button">
+            <a href="#">Profile</a>
+        </div>
+    </header>
+
+    <section id="profile-details">
+        <h2>Your Profile</h2>
+        <div class="profile-info">
+            <div class="profile-image">
+                <img src="profile.jpeg" >
+            </div>
+            <div class="profile-text">
+                <p><strong>Name:</strong> Dr john Thomson</p>
+                <p><strong>Unique identity :</strong>AY678XXX</p>
+                <p><strong>Government Identification:</strong>2XXXXXXX8976</p>
+                <p><strong>Email:</strong> john.doe@example.com</p>
+                <p><strong>Phone:</strong> (+91) 6304628123</p>
+                <p><strong>Location:</strong> New York, NY</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add more profile details as needed -->
+
+    <footer>
+        <p>&copy; 2023 Your Website Name</p>
+    </footer>
+</body>
+</html>
+
